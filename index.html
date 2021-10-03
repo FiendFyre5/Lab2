@@ -1,5 +1,6 @@
 <!--
     div DONE
+    span
     link
     main DONE
 header, footer DONE
@@ -18,7 +19,7 @@ strong (know the differences between b vs. strong)
 i
 em (know the differences between i vs. em)
 a DONE
-br
+br DONE
 IMG
 mg DONE
 audio
@@ -27,14 +28,14 @@ INTERACTIVE
  details
 summary
 FORNS
-form
+form DONE
 fieldset
-input (checkbox DONE, radio, text, date)*
+input (checkbox DONE, radioDONE, text DONE, date)*
 textarea
 datalist
 select
 option
-button
+button DONE
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -86,10 +87,32 @@ button
         <footer>
             <h3 id="contact">Contact us</h3>
             <form onsubmit="alert('Email sent')">
+                <!--email & message-->
                 <div>
                 <input type="text" placeholder="Enter Email Address" /> </div>
-            <div><input type="text" placeholder="Your message" /> </div>
-                <button>Submit</button>
+                <div><input type="text" placeholder="Your message" /> </div>
+                <!--add to mailing-->
+                <div><input type="checkbox" /> Add to Mailing List </div>
+                <!--start date-->
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startdate">
+                <!--choosing a day-->
+                <p>Choose day</p>
+                <span>
+                <input type="radio" id="mon" name="day" value="mon"
+                        checked>
+                <label for="mon">Monday</label>
+                </span>
+                <span>
+                <input type="radio" id="wed" name="day" value="wed">
+                <label for="wed">Wednesday</label>
+                </span>
+                <span>
+                <input type="radio" id="fri" name="day" value="fri">
+                <label for="fri">Friday</label>
+                </span>
+                <!--submit-->
+                <div><button>Submit</button> </div>
             </form>
             <br />
             <div>&copy; Lavanya Verma at https://fiendfyre5.github.io/Lab2/</div>
