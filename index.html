@@ -30,7 +30,7 @@ summary
 FORNS
 form DONE
 fieldset
-input (checkbox DONE, radioDONE, text DONE, date)*
+input (checkbox DONE, radioDONE, text DONE, date DATE)*
 textarea
 datalist
 select
@@ -53,7 +53,7 @@ button DONE
                   <li><a href="#Attendence">Attendence List</a></li>
                   <li><a href="#Agenda">Agenda</a></li>
                   <li><a href="#Multimedia">Multimedia</a></li>
-                  <li><a href="#contact">Multimedia</a></li>
+                  <li><a href="#contact">Contact Form</a></li>
                 </ul>
             </nav>
         </header>
@@ -90,7 +90,8 @@ button DONE
                 <!--email & message-->
                 <div>
                 <input type="text" placeholder="Enter Email Address" /> </div>
-                <div><input type="text" placeholder="Your message" /> </div>
+                <p>Your Message</p>
+                <div><textarea></textarea></div>
                 <!--add to mailing-->
                 <div><input type="checkbox" /> Add to Mailing List </div>
                 <!--start date-->
@@ -111,6 +112,25 @@ button DONE
                 <input type="radio" id="fri" name="day" value="fri">
                 <label for="fri">Friday</label>
                 </span>
+                <div>
+                <label for="sel">Choose your Clock color</label>
+                </div>
+                <div>
+                <select name="color" id="sel">
+                    <option value="">--Please choose an option--</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                </select> </div>
+                <p>What team name are choosing? </p>
+                <div>
+                <input list="an" />
+                <datalist id ="an">
+                    <option value="Access Denied"></option>
+                    <option value="Access granted"></option>
+                    <option value="Clocked out"></option>
+                </datalist>
+                </div>
                 <!--submit-->
                 <div><button>Submit</button> </div>
             </form>
