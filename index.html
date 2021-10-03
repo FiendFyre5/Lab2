@@ -10,7 +10,7 @@ TEXT
 hr
 p
 ul DONE
-ol
+ol DONE
 li DONE
 INLINE
 b
@@ -20,7 +20,7 @@ em (know the differences between i vs. em)
 a DONE
 br
 IMG
-mg
+mg DONE
 audio
 video
 INTERACTIVE
@@ -29,7 +29,7 @@ summary
 FORNS
 form
 fieldset
-input (checkbox, radio, text, date)*
+input (checkbox DONE, radio, text, date)*
 textarea
 datalist
 select
@@ -49,14 +49,28 @@ button
             <nav>
                 <!---Nav bar-->
                 <ul>
-                  <span><li><a href="#Attendence">Attendence List</a></li></span>
-                  <span><li><a href="#Agenda">Agenda</a></li></span>
-                  <span><li><a href="#Multimedia">Multimedia/a></li> </span>
+                  <li><a href="#Attendence">Attendence List</a></li>
+                  <li><a href="#Agenda">Agenda</a></li>
+                  <li><a href="#Multimedia">Multimedia</a></li>
                 </ul>
               </nav>
         </header>
         <main>
-
+            <h1>The pomodoro clock</h1>
+            <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71CRFjHr9tL.png"
+                alt="clock"
+                width="250"
+            />
+            <h2 id="Attendance">Attendance</h2>
+            <ol>
+                <li><input type="checkbox" /> Lavanya </li>
+                <li><input type="checkbox" /> Yukta</li>
+                <li><input type="checkbox" /> Nidhi</li>
+                <li><input type="checkbox" /> Anh</li>
+                <li><input type="checkbox" /> Rhea</li>
+                <li><input type="checkbox" /> Richa</li>
+            </ol>
         </main>
         <footer>
 
